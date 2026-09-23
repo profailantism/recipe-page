@@ -9,12 +9,27 @@
   --prep: hsl(332, 51%, 32%);
   --body: hsl(30, 54%, 90%);
 
-  --border-radius: 10px
+  --border-radius: 15px
 }
 
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 40em) {
+    background-color: var(--body);
+  }
+}
+
+main {
+  background-color: var(--main);
+  width: 400px;
+  border-radius: var(--border-radius);
+  @media (min-width: 40em) {
+    margin: 5rem 0;
+  }
 }
 
 main > :not(img) {
@@ -57,6 +72,9 @@ span {
 
 img {
   max-width: 100%;
+  @media (min-width: 40em) {
+  border-radius: var(--border-radius);
+  }
 }
 
 li:not(:last-child) {
