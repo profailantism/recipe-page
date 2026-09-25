@@ -8,8 +8,6 @@
   --sub-heading:  hsl(14, 45%, 36%);
   --prep: hsl(332, 51%, 32%);
   --body: hsl(30, 54%, 90%);
-
-  --border-radius: 15px
 }
 
 body {
@@ -26,9 +24,10 @@ body {
 main {
   background-color: var(--main);
   width: 400px;
-  border-radius: var(--border-radius);
+  border-radius: 15px;
   @media (min-width: 40em) {
     margin: 5rem 0;
+    width: 700px;
   }
 }
 
@@ -70,10 +69,15 @@ span {
   font-weight: 700;
 }
 
+.image-container {
+  margin: 2rem;
+}
+
 img {
   max-width: 100%;
+  border-radius: 15px 15px 0 0;
   @media (min-width: 40em) {
-  border-radius: var(--border-radius);
+    border-radius: 12px;
   }
 }
 
@@ -82,12 +86,12 @@ li:not(:last-child) {
   line-height: 1.5;
 }
 
-li::marker {
-  margin: 0 1rem;
-}
-
 section.preparation-time {
   padding: 1.5rem;
   background-color: var(--prep-box);
   border-radius: var(--border-radius);
+}
+
+hr {
+  border-top: 1px solid hsla(31, 14%, 71%, 0.596);
 }
