@@ -95,3 +95,8 @@ section.preparation-time {
 hr {
   border-top: 1px solid hsla(31, 14%, 71%, 0.596);
 }
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
